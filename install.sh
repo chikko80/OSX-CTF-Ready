@@ -91,7 +91,6 @@ wget https://raw.githubusercontent.com/411Hall/JAWS/master/jaws-enum.ps1 -O wind
 
 # print spoofer
 wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer32.exe -O windows/printspoof.exe
-
 # -----------------------------------
 
 
