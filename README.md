@@ -3,21 +3,24 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
 This repository makes your Mac OSX system ready for ctfs. It contains a collection of the most popular tools in the pentesting space. 
-
 The install.sh script turns your macos into a kali-like hackstation. Besides the tools of the kali-tools-top10 metapackage many other tools are installed, which are used in conventional CTFs on platforms like HackTheBox or TryHackMe.
-
 In addition, the repo combines many scripts in the area of priveledge escalation and enumeration in one central place, so that you do not have to search for all the scripts individually.
-
 Feel free to make new suggestions or recommendations which scripts should be added to the repo, alternatively you can also create a pull request right away
 
 
 ## Requirements
 
-This installation requires homebrew and python >= 3.8 (recommended & tested on 3.8)
+This installation requires wget, homebrew, pipx, pip andpython >= 3.8 (recommended & tested on 3.8)
 
 #### Install Homebrew 
 ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+#### Install wget 
+** Reboot after installation !important! **
+```bash
+  brew install wget
 ```
 
 #### Install Python3.8 
@@ -25,6 +28,18 @@ For safe install download installer via https://www.python.org/downloads/release
 alternatively (not tested):
 ```bash
   brew install python@3.8
+```
+
+#### Install pip 
+```bash
+  wget https://bootstrap.pypa.io/get-pip.py
+  python3 get-pip.py
+```
+
+#### Install pipx
+```bash
+  python3 -m pip install pipx
+  ln -s <path_to_your_python_versions>/3.8/bin/pipx /usr/local/bin/pipx # for example /Library/Frameworks/Python.framework/Versions/3.8/bin/pipx
 ```
 
 ### Manual installations
@@ -56,8 +71,11 @@ Script | Location
 :-----:|:-----:
 tokenbreaker| jwt
 jwt-cracker| jwt/jwt-cracker
-hash-id| misc
 linkfinder | misc/linkfinder
+hash-id| misc
+basic-scanner.py | misc
+string_finder | misc
+hydra_builder | misc
 
 **john** (John The Ripper): by default john is installed via homebrew. Therefore only the john binary is installed and not the jumbo pack. So tools like zip2john or ssh2john are missing. Furthermore the "brew-john" binary **does not support** multithreading via OpenMP. To install John with OpenMP support, read my blog post: TBA
 Dont forget to comment john out in the sh file if you are going to install it from source.
