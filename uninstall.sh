@@ -41,6 +41,8 @@ printf "${GREEN} Uninstall aircrack-ng...${NC}\n"
 brew uninstall aircrack-ng
 printf "${GREEN} Uninstall hydra...${NC}\n"
 brew uninstall hydra
+printf "${GREEN} Uninstall sqlmap...${NC}\n"
+brew uninstall sqlmap
 
 
 printf "${GREEN} Uninstall smbmap...${NC}\n"

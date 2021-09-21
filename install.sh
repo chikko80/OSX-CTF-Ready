@@ -54,6 +54,8 @@ printf "${GREEN} Install aircrack-ng...${NC}\n"
 brew install aircrack-ng
 printf "${GREEN} Install hydra...${NC}\n"
 brew install hydra
+printf "${GREEN} Install sqlmap...${NC}\n"
+brew install sqlmap
 
 
 printf "${GREEN} Install smbmap...${NC}\n"
