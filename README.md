@@ -3,8 +3,11 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
 This repository makes your Mac OSX system ready for ctfs. It contains a collection of the most popular tools in the pentesting space. 
+
 The install.sh script turns your macos into a kali-like hackstation. Besides the tools of the kali-tools-top10 metapackage many other tools are installed, which are used in conventional CTFs on platforms like HackTheBox or TryHackMe.
+
 In addition, the repo combines many scripts in the area of priveledge escalation and enumeration in one central place, so that you do not have to search for all the scripts individually.
+
 Feel free to make new suggestions or recommendations which scripts should be added to the repo, alternatively you can also create a pull request right away
 
 
