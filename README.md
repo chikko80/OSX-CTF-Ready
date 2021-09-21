@@ -13,7 +13,7 @@ Feel free to make new suggestions or recommendations which scripts should be add
 
 ## Requirements
 
-This installation requires wget, homebrew, pipx, pip andpython >= 3.8 (recommended & tested on 3.8)
+This installation requires wget, homebrew, pipx, pip and python >= 3.8 (recommended & tested on 3.8)
 
 #### Install Homebrew 
 ```bash
@@ -21,14 +21,14 @@ This installation requires wget, homebrew, pipx, pip andpython >= 3.8 (recommend
 ```
 
 #### Install wget 
-** Reboot after installation !important! **
+**Reboot after installation !important!**
 ```bash
   brew install wget
 ```
 
 #### Install Python3.8 
 For safe install download installer via https://www.python.org/downloads/release/python-380/
-alternatively (not tested):
+alternatively (**not tested**):
 ```bash
   brew install python@3.8
 ```
