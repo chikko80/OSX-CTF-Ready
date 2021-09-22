@@ -8,22 +8,23 @@ The install.sh script turns your macos into a kali-like hackstation. Besides the
 
 In addition, the repo combines many scripts in the area of priveledge escalation and enumeration in one central place, so that you do not have to search for all the scripts individually.
 
-Feel free to make new suggestions or recommendations which scripts should be added to the repo, alternatively you can also create a pull request right away
+I wrote an article on medium about the repository in which everything is explained in detail: https://medium.com/@seitzmanuel/how-to-get-your-mac-osx-ready-for-playing-ctfs-hacking-6b6801250d1e 
 
 
 ## Requirements
 
-This installation requires wget, homebrew, pipx, pip and python >= 3.8 (recommended & tested on 3.8)
+This installation requires wget, homebrew, pipx, pip and python >= 3.8 (recommended & tested on 3.8).
+Install the requirements in the same order as listed here.
+
+#### Install xcode commandline-tools 
+```bash
+  xcode-select --install
+```
 
 #### Install Homebrew 
 ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-#### Install wget 
-**Reboot after installation !important!**
-```bash
-  brew install wget
+  brew update
 ```
 
 #### Install Python3.8 
@@ -43,6 +44,12 @@ alternatively (**not tested**):
 ```bash
   python3 -m pip install pipx
   ln -s <path_to_your_python_versions>/3.8/bin/pipx /usr/local/bin/pipx # for example /Library/Frameworks/Python.framework/Versions/3.8/bin/pipx
+```
+
+#### Install wget 
+**Reboot after installation !important!**
+```bash
+  brew install wget
 ```
 
 ### Manual installations
@@ -80,7 +87,7 @@ basic-scanner.py | misc
 string_finder | misc
 hydra_builder | misc
 
-**john** (John The Ripper): by default john is installed via homebrew. Therefore only the john binary is installed and not the jumbo pack. So tools like zip2john or ssh2john are missing. Furthermore the "brew-john" binary **does not support** multithreading via OpenMP. To install John with OpenMP support, read my blog post: TBA
+**john** (John The Ripper): by default john is installed via homebrew. Therefore only the john binary is installed and not the jumbo pack. So tools like zip2john or ssh2john are missing. Furthermore the "brew-john" binary **does not support** multithreading via OpenMP. To install John with OpenMP support, read my blog post: https://medium.com/@seitzmanuel/how-to-compile-john-the-ripper-on-mac-osx-with-openmp-support-multicore-big-sur-a60cad850b7d
 Dont forget to comment john out in the sh file if you are going to install it from source.
 
 

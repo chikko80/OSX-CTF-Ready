@@ -5,8 +5,6 @@ NC='\033[0m' # No Color
 
 sudo -v
 
-xcode-select --install
-
 # --------- Requirements ------------
 printf "${GREEN} Update Brew...${NC}\n"
 brew update
