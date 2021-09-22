@@ -5,6 +5,12 @@ NC='\033[0m' # No Color
 
 sudo -v
 
+
+printf "${GREEN} Uninstall openssl...${NC}\n"
+#brew uninstall openssl
+printf "${GREEN} Uninstall wget...${NC}\n"
+#brew uninstall wget
+
 printf "${GREEN} Uninstall Burpsuite...${NC}\n"
 brew uninstall burp-suite
 printf "${GREEN} Uninstall ZAP...${NC}\n"
@@ -69,3 +75,10 @@ sudo rm -rf /usr/local/share/wordlists
 printf "${GREEN} Uninstall seclist...${NC}\n"
 sudo rm -rf /usr/local/share/seclists
 # -----------------------------------
+
+
+printf "${GREEN} Uninstall pipx...${NC}\n"
+python3 -m pip uninstall pipx
+
+printf "${GREEN} Uninstall brew (Catalina, Big Sur, Mojave)...${NC}\n"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
