@@ -123,6 +123,7 @@ Dont forget to comment john out in the sh file if you are going to install it fr
  - hash-identifier
  - linkfinder
  - steghide
+ - sqlmap
 
 ### wordlists
  - kali linux wordlists
