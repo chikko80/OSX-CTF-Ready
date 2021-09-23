@@ -41,6 +41,7 @@ alternatively (**not tested**):
 ```
 
 #### Install pipx
+export <home_directory>/.local/bin to your path if its missing
 ```bash
   python3 -m pip install pipx
   ln -s <path_to_your_python_versions>/3.8/bin/pipx /usr/local/bin/pipx # for example /Library/Frameworks/Python.framework/Versions/3.8/bin/pipx
@@ -56,7 +57,7 @@ alternatively (**not tested**):
 Steghide require a manual installation steps due to the installation of mac ports
 
     1. Download and install mac ports https://guide.macports.org/chunked/installing.macports.html
-    2. add /usr/local/bin to your path if its missing
+    2. add /opt/local/bin to your path if its missing
 
 ```bash
 sudo port install steghide
